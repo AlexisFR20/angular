@@ -1,0 +1,135 @@
+.user-header {
+    background-color: rgb(65, 125, 241);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 1em;
+    align-items: center;
+}
+
+.user-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.edit-btn {
+    background-color: rgb(21, 85, 208);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em 0.3em;
+    border-radius: 3px;
+}
+
+.edit-btn:hover {
+    background-color: rgb(100, 160, 250);
+}
+
+.edit-icon {
+    width: 90%;
+}
+
+.info-content {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 0.8em;
+    padding-right: 1.5em;
+}
+
+.city {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.user-photo {
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
+    width: 20%;
+}
+
+.men {
+    background-color: rgb(31, 173, 167);
+}
+
+.women {
+    background-color: rgb(255, 200, 36);
+}
+
+@media (max-width: 1199.98px) {
+    .user-text {
+        font-size: 0.9em;
+    }
+    .info-content {
+        padding: 1em 0.3em;
+        justify-content: space-around;
+    }
+    .user-photo {
+        box-sizing: content-box;
+        padding: 0.5em 0.2em;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .user-text {
+        font-size: 1.2em;
+    }
+    .info-content {
+        padding: 1em 10%;
+        padding-right: 17%;
+        justify-content: space-between;
+    }
+    .user-photo {
+        box-sizing: content-box;
+        padding: 0.5em 0.7em;
+    }
+    .city {
+        font-size: 1.2em;
+    }
+    .phone-number {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .user-text {
+        font-size: 1.4em;
+    }
+    .info-content {
+        padding: 1em 8%;
+        padding-right: 15%;
+        justify-content: space-between;
+    }
+    .user-photo {
+        box-sizing: content-box;
+        padding: 0.7em 0.9em;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .user-text {
+        font-size: 0.8em;
+    }
+    .info-content {
+        padding: 1em;
+        justify-content: space-around;
+    }
+    .user-photo {
+        box-sizing: content-box;
+        padding: 0.5em 0.7em;
+    }
+    .city {
+        font-size: 0.8em;
+    }
+    .phone-number {
+        font-size: 0.8em;
+    }
+}

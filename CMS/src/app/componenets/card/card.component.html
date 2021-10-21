@@ -1,0 +1,16 @@
+<div>
+    <div class="user-header">
+        <span class="user-text">{{ User.firstName }} {{ User.lastName }}</span>
+        <button class="edit-btn" (click)="openDialog('')">
+                <img class="edit-icon " src="../../../assets/PNG/icono_editar.png " alt=" ">
+            </button>
+    </div>
+    <div class="info-content ">
+        <img *ngIf="User.gender=='f' " class="user-photo women " src="../../../assets/PNG/icono_mujer.png " alt=" ">
+        <img *ngIf="User.gender=='m' " class="user-photo men " src="../../../assets/PNG/icono_hombre.png " alt=" ">
+        <p class="user-info ">
+            <span class="city ">{{User.location}}</span>
+            <span class="phone-number "> {{User.phone}} </span>
+        </p>
+    </div>
+</div>

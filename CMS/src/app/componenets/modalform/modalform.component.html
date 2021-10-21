@@ -1,0 +1,49 @@
+<div id="hide-div">
+    <div class="card-info">
+        <div class="action-header">
+            <p class="action-title">{{title}}</p>
+            <button class="close-btn" (click)="cerrar()"><img src="../../../assets/PNG/icono_cerrar.png" class="close-img"
+                    alt="close"
+                    ></button>
+        </div>
+        <div id="fr-new-user" class="input-form">
+            <div class="input-content">
+                <div>
+                    <label for="user-name" class="labels">Nombre</label>
+                    <input type="text" id="user-name" class="user-field" value={{User2Edit.firstName}} [(ngModel)]=Nombre maxlength="45">
+                </div>
+                <div>
+                    <label for="user-lastname" class="labels">Apellido</label>
+                    <input type="text" id="user-lastname" class="user-field" value={{User2Edit.lastName}} [(ngModel)]=Apellido maxlength="45">
+                </div>
+                <div>
+                    <label for="user-location" class="labels">Ubicacion</label>
+                    <input type="text" id="user-location" class="user-field" value={{User2Edit.location}} [(ngModel)]=Ubicacion maxlength="90">
+                </div>
+                <div>
+                    <label for="user-phone" class="labels">Celular</label>
+                    <input type="text" id="user-phone" class="user-field" value={{User2Edit.phone}} [(ngModel)]=Telefono maxlength="10">
+                </div>
+            </div>
+            <div class="gender-content">
+                <div>
+                    <input *ngIf="User2Edit.gender=='f'" type="radio" name="gender" [(ngModel)]=sex id="male" class="radio-style" value="m">
+                    <input *ngIf="User2Edit.gender=='m'" type="radio" name="gender" [(ngModel)]=sex id="male" class="radio-style" value="m" checked>
+                    <input *ngIf="User2Edit.gender==undefined" type="radio" name="gender" [(ngModel)]=sex id="male" class="radio-style" value="m">
+                    <label for="male" class="labels gender-label">Hombre</label>
+                </div>
+                <div>
+                    <input *ngIf="User2Edit.gender=='f'" type="radio" name="gender" [(ngModel)]=sex id="female" class="radio-style" value="f" checked>
+                    <input *ngIf="User2Edit.gender=='m'" type="radio" name="gender" [(ngModel)]=sex id="female" class="radio-style" value="f">
+                    <input *ngIf="User2Edit.gender==undefined" type="radio" name="gender" [(ngModel)]=sex id="female" class="radio-style" value="f">
+                    <label for="female" class="labels gender-label">Mujer</label>
+                </div>
+
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="form-btn accept-btn" (click)="save()" [disabled]="habiliatarBoton()">{{botton}}</button>
+                <button class="form-btn cancel-btn" (click)="cerrar()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

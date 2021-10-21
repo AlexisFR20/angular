@@ -1,0 +1,144 @@
+#hide-div {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accept-btn:disabled {
+    background-color: rgb(151, 182, 245);
+}
+
+.card-info {
+    background-color: white;
+    border-radius: 10px;
+    width: 32%;
+    padding: 1.5em 1em;
+    box-sizing: content-box;
+}
+
+.action-header {
+    margin: 0 auto;
+    padding-left: 15%;
+    padding-right: 5%;
+    margin-bottom: 1.7em;
+}
+
+.action-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 88%;
+    text-align: center;
+}
+
+.close-btn {
+    background-color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: inline;
+    border: none;
+    cursor: pointer;
+}
+
+.close-img {
+    width: 70%;
+}
+
+.input-form {
+    margin: 0 auto;
+    border-top: 2px solid rgb(217, 217, 217);
+    width: 90%;
+}
+
+.input-content {
+    margin-top: 2em;
+    /* width: 20%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-content div {
+    flex-basis: 50%;
+}
+
+.labels {
+    font-weight: bold;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.user-field {
+    outline: none;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 30px;
+    height: 2.2em;
+    margin: 0 auto;
+    width: 95%;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding-left: 0.7em;
+    margin-bottom: 1em;
+}
+
+.gender-content {
+    margin-bottom: 2em;
+}
+
+.gender-content div {
+    display: inline;
+}
+
+.gender-label {
+    display: inline;
+}
+
+.form-actions {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-btn {
+    font-size: 0.9em;
+    padding: 0.6em 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.accept-btn {
+    background-color: rgb(65, 125, 241);
+    color: white;
+    font-weight: bold;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.accept-btn:hover:enabled {
+    background-color: rgb(153, 181, 238);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: rgb(65, 125, 241);
+    text-decoration: underline;
+}
+
+.cancel-btn:hover {
+    background-color: rgb(199, 210, 233);
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+<main>
+    <nav id="second-nav">
+        <div class="section-name">
+            <img class="usr-img" src="../../../assets/PNG/icono_usuarios.png" alt="">
+            <h2>Usuarios</h2>
+        </div>
+        <div class="search-content">
+            <input id="search-bar" type="text" placeholder="Buscador" type="text" [(ngModel)]="inputext" />
+            <label for="search-bar" id="search-btn">
+                <img class="search-icon" src="../../../assets/PNG/icono_buscar.png" alt="search-icon">
+            </label>
+        </div>
+    </nav>
+
+    <section class="users-content">
+        <app-card class="user-card" *ngFor="let user of users;" [hidden]="!user.firstName.includes(inputext)" [User]="user"></app-card>
+
+    </section>
+</main>

@@ -1,0 +1,124 @@
+#second-nav {
+    width: 73%;
+    margin: 1.7em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins-Bold;
+}
+
+#search-bar {
+    box-sizing: content-box;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background-color: rgb(217, 217, 217);
+    height: 2.5em;
+    padding-left: 1.2em;
+    outline: none;
+    width: 100%;
+    font-weight: bold;
+}
+
+#search-btn {
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    align-items: center;
+    width: 2.2em;
+    border-radius: 0 20px 20px 0;
+}
+
+.new-user {
+    align-self: center;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: rgb(65, 125, 241);
+    padding: 0.6em 1.5em;
+    width: 12em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.new-user:hover {
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.icon-btn {
+    width: 0.8em;
+}
+
+.section-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 13%;
+}
+
+.search-content {
+    flex-basis: 35%;
+    display: flex;
+}
+
+.search-icon {
+    width: 52%;
+    height: 52%;
+    padding-left: 0.1em;
+}
+
+main {
+    font-family: Poppins-Bold;
+    margin: 0 auto;
+    max-width: 1422px;
+}
+
+.users-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    justify-content: space-around;
+}
+
+.user-card {
+    width: 23%;
+    margin-top: 1.5em;
+    box-shadow: 3px 3px 10px gray;
+    border-radius: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .user-card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #second-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #search-bar {
+        height: 2.8em;
+    }
+    .section-name {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .usr-img {
+        width: 10%;
+    }
+    .users-content {
+        flex-direction: column;
+    }
+    .user-card {
+        width: 70%;
+        margin: 1em auto;
+    }
+}
